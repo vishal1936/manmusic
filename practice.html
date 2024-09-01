@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+    .background-container {
+        height: 100vh; /* Full height */
+        background-size: cover; /* Cover the container */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* No repeat of the background image */
+        transition: background-image 1s ease-in-out; /* Smooth transition */
+    }
+    </style>
+</head>
+<body>
+    <div class="background-container" id="background-slideshow">
+        <!-- Your content here -->
+    </div>
+    <script>
+    let backgrounds = [
+        "url('netfliximages/badnews  song.jpg')",
+        "url('netfliximages/tera hone lga hu.jpg')",
+        "url('netfliximages/12.jpg')"
+    ];
+    
+    let currentIndex = 0;
+    
+    function changeBackground() {
+        currentIndex = (currentIndex + 1) % backgrounds.length;
+        document.getElementById("background-slideshow").style.backgroundImage = backgrounds[currentIndex];
+    }
+    
+    setInterval(changeBackground, 3000); // Change background every 3 seconds
+    </script>
+</body>
+</html>

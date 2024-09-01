@@ -1,0 +1,352 @@
+
+.col-20 {
+    /* flex: 0 0 20%; */
+    max-width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    padding-top: 22px;
+position: fixed;
+
+}
+
+.custom-row1 {
+    height: 10px; /* Custom height */
+    width:90%; /* Full width */
+    margin-bottom: 10px; /* Space between rows */
+    background-color:rgba(32, 31, 31, 0.68) ;
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px;
+   
+}
+.custom-row1 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.custom-row1 ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 1px;
+}
+.custom-row1 ul{
+    gap: 11px;
+}
+.logo {
+    height: 100px;
+    width: 81px;
+}
+
+.logo img{
+    height: 220px;
+    width:220px;
+    position: relative;
+bottom: 50px;
+right: 40px;}
+
+.custom-row2 {
+    height: auto; /* Custom height */
+    width:90%; /* Full width */
+    margin-bottom: 10px; /* Space between rows */
+    display: flex;
+    padding: 22px;
+    justify-content: center;
+    /* padding-bottom: 10px; */
+    padding: 18px;
+    gap: 10px;
+    background-color:rgba(32, 31, 31, 0.68) ;
+
+}
+.playlist{
+    height:auto ;
+    width: 95%;
+    background-color: rgb(55, 55, 56);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   align-items: flex-start;
+   padding: 20px;
+   border-radius: 10px;
+   gap: 8px;
+}
+.playlist2{
+    height:auto;
+    width: 95%;
+    background-color: rgb(55, 55, 56);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   align-items: flex-start;
+   padding: 20px;
+   border-radius: 10px;
+   gap: 8px;
+
+}
+.playlist3{
+    height:auto ;
+    width: 95%;
+    background-color: rgb(55, 55, 56);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 8px;
+
+}
+
+.col-80 {
+    max-width: 80%;
+
+    flex: 1;
+    padding-left: 30px;
+    background-color: rgb(55, 55, 56);
+z-index: 3;
+overflow: hidden;
+margin-left: 20%;
+
+}
+
+.custom-row {
+    height: 100px; /* Custom height */
+    width: 90%; /* Full width */
+    margin-bottom: 10px; /* Space between rows */
+}
+.row1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    background-color: rgb(13, 13, 14);
+    overflow: hidden;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    width:13%;
+    height: 13px;
+    /* border: 1px solid black; */
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px;
+    padding:4px;
+    cursor: pointer;
+    position: relative;
+
+}
+td img{
+    height: 180px;
+    width: 160px;
+    border-radius: 3%;
+    cursor: pointer;
+
+}
+.dicribe{
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+td h6{
+    position: relative;
+    margin: 0px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;text-align: start;
+    cursor: pointer;
+
+}
+td:hover {
+    background-color: rgb(95, 95, 80);
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.playIcon { /* New lines added */
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    width: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+.songContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.songContainer:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.playing .playIcon { /* New line added */
+    display: block;
+}
+.row2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    background-color: rgb(13, 13, 14);
+    overflow: hidden;
+
+}
+#audio1{
+    cursor: pointer;
+
+}
+#controls {
+   
+}
+
+.songDiv {
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.songDiv:hover {
+    background-color: rgb(95, 95, 80);
+}
+
+#playImage {
+  
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+.row3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    background-color: rgb(13, 13, 14);
+    position: relative;
+    width: 102%;
+    overflow: hidden;
+}
+.row4{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    background-color: rgb(13, 13, 14);
+    position: relative;
+    width: 102%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+}
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+}
+
+.video-container {
+    position: relative;
+            cursor: pointer;
+            flex: 0 0 calc(25% - 0px);
+            scroll-snap-align: start;
+            transition: transform 0.3s ease-in-out;
+}
+.video-container:hover {
+    transform: scale(1.1);
+}
+
+.controls {
+    position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            padding: 10px;
+            border-radius: 5px rgb(77, 75, 75);      
+            font-size: 10px;
+    /* Added this line */
+}
+.controls.visible {
+    opacity: 1;
+}
+button {
+    background-color: rgba(51, 51, 51, 0.3); /* Transparent background */
+    color: white;
+    border: 1px solid rgb(77, 75, 75); /* Adding a white border for better visibility */
+  border-radius: 15px rgb(77, 75, 75);      
+  font-size: 7px;
+   padding: 5px 10px;
+    cursor: pointer;
+}
+.video{
+    width: 323px;
+}
+.row5{
+    display: flex;
+    flex-direction:     row;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(13, 13, 14);
+    position: relative;
+    width: 102%;
+    overflow: hidden;
+    gap: 208px;
+    padding: 30px;
+}
+.company{
+    flex-direction: column;
+justify-content: center;
+font-weight: 500;
+font-size: 17px;
+gap: 18px;
+}
+.company li{
+list-style: none;
+display: flex;
+margin: 12px;
+font-weight: 300;
+font-size: 15px;
+justify-content: center;
+}
+.row6{
+    display: flex;
+    flex-direction:     row;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(13, 13, 14);
+    position: relative;
+    width: 102%;
+    overflow: hidden;
+    gap: 208px;
+    padding: 30px;
+}
